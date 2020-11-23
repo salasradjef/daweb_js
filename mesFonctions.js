@@ -1,3 +1,7 @@
+let el__index = document.querySelector('#index')
+let el__simple = document.querySelector('#js-simple')
+
+if(el__index){
 
 let chaine = document.querySelector('#chaine')
 let ch = document.querySelector('#ch')
@@ -38,12 +42,14 @@ chaine.addEventListener('keyup',() => {
 
 
 
-
+}
 
 //Partie 2
-pwd1 = document.querySelector('#pwd1')
-pwd2 = document.querySelector('#pwd2')
-btn = document.querySelector('#sub')
+
+if(el__simple){
+let pwd1 = document.querySelector('#pwd1')
+let pwd2 = document.querySelector('#pwd2')
+let btn = document.querySelector('#sub')
 function checkPassword(){
 if(pwd1.value != pwd2.value){
     pwd1.setAttribute('class','phraseErronee')
@@ -53,5 +59,6 @@ if(pwd1.value != pwd2.value){
     pwd1.setAttribute('class','phraseCorrecte')
     pwd2.setAttribute('class','phraseCorrecte')
     btn.removeAttribute('disabled')
+}
 }
 }
